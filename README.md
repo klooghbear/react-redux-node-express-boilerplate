@@ -15,6 +15,7 @@
 * RESTFul API
 * WEBPACK
 * BABEL
+* Enzyme & Jest
 
 ### Happy coding! 
 
