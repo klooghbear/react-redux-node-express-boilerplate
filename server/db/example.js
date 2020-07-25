@@ -1,9 +1,9 @@
-const connection = require('./connection')
+const connection = require('./connection');
 
-function getExample (db = connection) {
-    return db('some_table').select()
+function getExample(db = connection) {
+  return db('some_table').select();
 }
 
 module.exports = {
-  getExample
-}
+  getExample,
+};
