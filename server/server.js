@@ -1,14 +1,14 @@
 const express = require('express');
-const server = express();
 const path = require('path');
+const { router } = require('./routes/exampleRoute.js')
 
-//Instantiate route locations as variables here
-//example: const userRoute = require('./routes/filename')
+const server = express();
 
 server.use(express.json());
 server.use(express.static(path.join(__dirname, './public')));
 
-//export routes through api url
-//example: server.use('/users', userRoute)
+server.use('/', router)
 
-module.exports = server;
+module.exports = {
+  server
+}

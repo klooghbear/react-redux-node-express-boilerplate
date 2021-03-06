@@ -1,6 +1,6 @@
 const connection = require('./connection');
 
-function getExample(db = connection) {
+const getExample = (db = connection) => {
   return db('some_table').select();
 }
 

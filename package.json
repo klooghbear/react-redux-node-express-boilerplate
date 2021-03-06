@@ -1,7 +1,7 @@
 {
-  "name": "follow-my-lead-2.0",
+  "name": "full-stack-js-boilerplate",
   "version": "1.0.0",
-  "description": "Partnering people with pooches",
+  "description": "React/Redux, Node/Express, RESTful boilerplate",
   "main": "index.js",
   "scripts": {
     "client": "webpack-dev-server --hot --inline",
