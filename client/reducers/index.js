@@ -1,8 +1,7 @@
 import { combineReducers } from "redux"
 
-//import reducers from location
-//example: import reducerType from './location'
+import reducer from "./reducer.js"
 
 export default combineReducers({
-  //export reducers to the client index
+  reducer
 })
