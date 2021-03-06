@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('path');
-const { router } = require('./routes/exampleRoute.js')
+const { router } = require('./routes/router.js')
 
 const server = express();
 

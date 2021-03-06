@@ -1,13 +1,12 @@
 const express = require('express')
-const { getExample } = require('../db/example')
+const { getter } = require('../db/models.js')
 
 const router = express.Router()
 
 router.get('/', (req, res) => {
-  return getExample().then(id => {
-    console.log(id)
+  getter().then((id) => {
     res.json(id);
-  }).catch(error => {
+  }).catch((error) => {
     res.status(500).send({
       message: "ERROR EXAMPLE MESSAGE"
     })
