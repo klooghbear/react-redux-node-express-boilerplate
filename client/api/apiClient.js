@@ -13,11 +13,10 @@ export const fetcher = () => {
       const { body } = response
 
       dispatch(receive(body))
-    })
-      .catch((error) => {
-        const { message } = error
+    }).catch((error) => {
+      const { message } = error
 
-        dispatch(receiveError(`${message} at path ${path}`))
-      })
+      dispatch(receiveError(`${message} at path ${path}`))
+    })
   }
 }
