@@ -43,5 +43,10 @@
                 "code": 80
             }
         ]
+    },
+    "settings": {
+        "react": {
+            "version": "latest"
+        }
     }
 }
