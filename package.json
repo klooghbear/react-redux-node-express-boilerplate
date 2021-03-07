@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/klooghbear/follow-my-lead-2.0.git"
+    "url": "git+https://github.com/klooghbear/js-boilerplate.git"
   },
   "author": "klooghbear",
   "license": "ISC",
