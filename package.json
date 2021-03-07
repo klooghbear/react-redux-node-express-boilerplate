@@ -11,6 +11,11 @@
     "start": "run-s build server",
     "build": "webpack",
     "server": "node server",
+    "create-migration": "npx knex migrate:make",
+    "create-seed": "npx knex seed:make",
+    "migrate": "npx knex migrate:latest",
+    "seed": "npx knex seed:run",
+    "rollback": "npx knex migrate:rollback",
     "test": "jest --watchAll",
     "lint": "eslint --ext=js,jsx client/ server/db server/routes server/index.js server/server.js"
   },
