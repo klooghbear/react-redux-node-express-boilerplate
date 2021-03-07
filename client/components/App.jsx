@@ -1,9 +1,11 @@
 import React from "react"
 
+import "./App.scss"
+
 const App = () => (
   <div className="app">
     <h1>
-      Welcome fellow Dev!
+      Welcome developer!
     </h1>
   </div>
 )
