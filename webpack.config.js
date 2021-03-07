@@ -1,8 +1,6 @@
 const path = require("path")
 const { join } = path
 
-console.log(__dirname)
-
 module.exports = {
   entry: "./client/index.js",
 
