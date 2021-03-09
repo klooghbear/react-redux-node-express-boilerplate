@@ -1,0 +1,14 @@
+.app-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+  &__image {
+    border-radius: 50%;
+  }
+
+  &__title {
+    color: #999;
+  }
+}

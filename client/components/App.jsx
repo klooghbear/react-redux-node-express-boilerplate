@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from "react"
 
 import "./App.scss"
+import Header from "./Header/Header"
 
 export default class App extends Component {
   constructor(props) {
@@ -11,9 +12,7 @@ export default class App extends Component {
     return(
       <Fragment>
         <div className="app">
-          <h1>
-            Welcome developer!
-          </h1>
+          <Header/>
         </div>
       </Fragment>
     )
