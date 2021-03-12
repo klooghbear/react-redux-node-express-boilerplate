@@ -1,0 +1,17 @@
+.app-body {
+  color: #999;
+  display: flex;
+  padding: 10%;
+  justify-content: center;
+
+  &__square {
+    margin: 0 40px;
+    width: 230px;
+    height: 230px;
+    background: #02d196;
+  }
+
+  &__content {
+    width: 1000px;
+  }
+}
