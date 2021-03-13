@@ -1,5 +1,8 @@
 import React, { Component, Fragment } from "react"
 
+import Header from "./Header/Header.jsx"
+import Body from "./Body/Body.jsx"
+
 import "./App.scss"
 
 export default class App extends Component {
@@ -11,9 +14,9 @@ export default class App extends Component {
     return(
       <Fragment>
         <div className="app">
-          <h1>
-            Welcome developer!
-          </h1>
+          <Header/>
+          
+          <Body />
         </div>
       </Fragment>
     )
