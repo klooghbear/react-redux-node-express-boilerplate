@@ -1,14 +1,16 @@
 .app-header {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
+  padding: 50px 50px 0;
 
   &__image {
     border-radius: 50%;
+    padding: 0 50px;
   }
 
   &__title {
-    color: #999;
+    color: #4abdeb;
   }
 }

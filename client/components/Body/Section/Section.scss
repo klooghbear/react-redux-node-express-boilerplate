@@ -1,0 +1,15 @@
+.app-body-section {
+  display: flex;
+  align-items: center;
+
+  &__square {
+    margin-right: 40px;
+    width: 230px;
+    height: 230px;
+    border: solid 1px #4abdeb;
+  }
+
+  &__content {
+    width: 1000px;
+  }
+}
