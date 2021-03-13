@@ -1,11 +1,24 @@
-import React from "react"
+import React, { Component, Fragment } from "react"
 
-const App = () => (
-  <div className="app">
-    <h1>
-      Welcome fellow Dev!
-    </h1>
-  </div>
-)
+import Header from "./Header/Header.jsx"
+import Body from "./Body/Body.jsx"
 
-export default App
+import "./App.scss"
+
+export default class App extends Component {
+  constructor(props) {
+    super(props)
+  }
+
+  render() {
+    return(
+      <Fragment>
+        <div className="app">
+          <Header/>
+          
+          <Body />
+        </div>
+      </Fragment>
+    )
+  }
+}
