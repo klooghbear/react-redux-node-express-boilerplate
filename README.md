@@ -1,19 +1,15 @@
 # MY BOILER PLATE
 
-## TECH
+## STACK
 
-- GitHub, Git
-- React
-- React-Router
-- Redux & Redux Thunk
-- Express
-- Node.js & NPM
-- KnexORM
-- SQLite3
-- CSS3 & HTML5
-- RESTFul API
-- WEBPACK
-- BABEL
+- React with Redux and Redux thunk
+- Node/Express
+- SQLite3 with knexORM
+- SCSSS & HTML5
+- RESTful conventions
+- Webpack 4
+- Babel for transpiler
+- ESLINT
 
 ## COMMANDS
 
