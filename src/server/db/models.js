@@ -5,5 +5,5 @@ const getter = (db = connection) => {
 }
 
 module.exports = {
-  getter,
+  getter
 }

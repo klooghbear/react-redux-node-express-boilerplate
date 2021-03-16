@@ -1,15 +1,24 @@
+const HtmlWebPackPlugin = require("html-webpack-plugin")
 const path = require("path")
-const { join } = path
+const { resolve } = path
 
 module.exports = {
-  entry: "./client/index.js",
+  context: __dirname,
+  entry: "./src/client/index.js",
 
   output: {
-    path: join(__dirname, "server/public"),
-    filename: "bundle.js"
+    path: resolve(__dirname, "dist"),
+    filename: "bundle.js",
+    publicPath: "/"
   },
 
   mode: "development",
+
+  devServer: {
+    historyApiFallback: true,
+    
+    inline: true
+  },
   
   module: {
     rules: [
@@ -22,19 +31,24 @@ module.exports = {
       },
       { 
         test: /\.s[ac]ss$/i,
-        use: [
-          // Creates `style` nodes from JS strings
-          "style-loader",
-          // Translates CSS into CommonJS
-          "css-loader",
-          // Compiles Sass to CSS
-          "sass-loader",
-        ]
+        use: [ "style-loader", "css-loader", "sass-loader" ]
+      },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: "url-loader"
       }
     ]
   },
 
   resolve: {
-    extensions: [".js", ".jsx", "json", ".css"]
-  }
+    extensions: ["*", ".js", ".jsx", "json", ".scss"]
+  },
+
+  plugins: [
+    new HtmlWebPackPlugin({
+      inject: true,
+      template: path.resolve(__dirname, "public/index.html"),
+      filename: "index.html"
+    })
+  ]
 }
