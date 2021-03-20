@@ -1,6 +1,6 @@
 import React, { Fragment } from "react"
 
-import IMAGE from "../../../../public/images/example.png"
+import IMAGE from "Utilities/assets/example.png"
 
 import "./Header.scss"
 

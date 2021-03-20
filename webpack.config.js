@@ -16,8 +16,10 @@ module.exports = {
 
   devServer: {
     historyApiFallback: true,
-    
-    inline: true
+  
+    inline: true,
+
+    hot: true
   },
   
   module: {
@@ -41,13 +43,18 @@ module.exports = {
   },
 
   resolve: {
-    extensions: ["*", ".js", ".jsx", "json", ".scss"]
+    alias: {
+      Utilities: resolve(__dirname, "public/")
+    },
+
+    extensions: [ "*", ".js", ".jsx", "json", ".scss" ]
   },
 
   plugins: [
     new HtmlWebPackPlugin({
       inject: true,
-      template: path.resolve(__dirname, "public/index.html"),
+      template: resolve(__dirname, "public/index.html"),
+      favicon: resolve(__dirname, "public/assets/example.png"),
       filename: "index.html"
     })
   ]
