@@ -9,7 +9,6 @@ const DIST = join(__dirname, "../", "../dist")
 
 app.use(cors())
 app.use(express.static(DIST))
-app.use(express.static("public"))
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
