@@ -21,7 +21,10 @@
         "react"
     ],
     "rules": {
-        "react/prop-types": "off",
+        "comma-dangle": [
+            "error", 
+            "never"
+        ],
         "indent": [
             "error",
             2
@@ -43,6 +46,9 @@
             {
                 "code": 80
             }
+        ],
+        "react/prop-types": [
+            "off"
         ]
     },
     "settings": {

@@ -1,8 +1,8 @@
-import * as actions from "../actions_types/actions/index.js"
+import actions from "../actions_types/actions/index.js"
 import request from "superagent"
 
 const path = "/"
-const { requester, receive, receiveError } = actions.default
+const { requester, receive, receiveError } = actions
 const promise = request.get(path)
 
 export const fetcher = () => {

@@ -1,15 +1,18 @@
 # MY BOILER PLATE
 
-## STACK
+## TECH
 
-- React with Redux and Redux thunk
-- Node/Express
-- SQLite3 with knexORM
-- SCSSS & HTML5
-- RESTful conventions
-- Webpack 4
-- Babel for transpiler
-- ESLINT
+- GitHub, Git
+- React
+- React-Router
+- Redux & Redux Thunk
+- Express
+- Node.js & NPM
+- KnexORM
+- SQLite3
+- SCSS
+- WEBPACK
+- BABEL
 
 ## COMMANDS
 
@@ -29,6 +32,9 @@ npm run rollback ==> npx knex migrate:rollback /- remove maniuplation of tables
 
 ## DEPLOYMENT HEROKU
 
-<p>Make sure to move devDependencies into dependencies and if deploying on heroku don't forget to configure SQLite3 to PostgreSQL</p>
+<p>
+  Make sure to move devDependencies into dependencies and if deploying on heroku 
+  don't forget to configure SQLite3 to PostgreSQL
+</p>
 
 ### Happy coding!
