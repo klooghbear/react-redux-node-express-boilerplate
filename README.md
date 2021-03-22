@@ -10,8 +10,7 @@
 - Node.js & NPM
 - KnexORM
 - SQLite3
-- CSS3 & HTML5
-- RESTFul API
+- SCSS
 - WEBPACK
 - BABEL
 
@@ -33,6 +32,9 @@ npm run rollback ==> npx knex migrate:rollback /- remove maniuplation of tables
 
 ## DEPLOYMENT HEROKU
 
-<p>Make sure to move devDependencies into dependencies and if deploying on heroku don't forget to configure SQLite3 to PostgreSQL</p>
+<p>
+  Make sure to move devDependencies into dependencies and if deploying on heroku 
+  don't forget to configure SQLite3 to PostgreSQL
+</p>
 
 ### Happy coding!
